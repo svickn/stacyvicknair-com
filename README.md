@@ -1,6 +1,6 @@
 # svicknair-com
 
-This is the underlying code that is used to build and deploy the main content for https://stacyvicknair.com. In many ways this is a learning experiment but I also hope that it serves as a great platform that helps me accomplish what I hope to accomplish with my personal website.
+This is the underlying code that is used to build and deploy the main content for [https://stacyvicknair.com](https://stacyvicknair.com). In many ways this is a learning experiment but I also hope that it serves as a great platform that helps me accomplish what I hope to accomplish with my personal website.
 
 ## Built With
 

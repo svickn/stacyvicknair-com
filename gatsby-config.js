@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Stacy Vicknair`,
-    description: `People-first Software Engineering Manager. Speaker. Nerd. Let's set aside the kool-aid and drink the water together.`,
+    description: `People-first Software Engineering Manager. Speaker. Amateur at best D&D player.`,
     author: `Stacy Vicknair`,
   },
   plugins: [
@@ -14,15 +14,23 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-material-ui`,
+      options: {
+        stylesProvider: {
+          injectFirst: true,
+        },
+      },
+    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `stacyvicknair.com`,
+        short_name: `stacyvicknair.com`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#f5f5f6`,
+        theme_color: `#4a148c`,
         display: `minimal-ui`,
         icon: `src/images/sv-icon.png`, // This path is relative to the root of the site.
       },

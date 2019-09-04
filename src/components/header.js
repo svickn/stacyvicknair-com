@@ -1,35 +1,37 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import { makeStyles } from '@material-ui/core/styles';
+import { AppBar, Toolbar, Link, Button, IconButton, Box } from '@material-ui/core';
+import MenuIcon from '@material-ui/icons/Menu';
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `#761D8C`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+const useStyles = makeStyles(theme => ({
+  root: {
+    flexGrow: 1,
+  },
+  menuButton: {
+    marginRight: theme.spacing(2),
+  },
+  title: {
+    flexGrow: 1,
+  },
+}));
+
+const Header = ({ siteTitle }) => {
+  const classes = useStyles();
+
+  return (
+    <div className={classes.root}>
+      <AppBar position="static">
+        <Toolbar>
+          <Link underline="none" href="/" variant="h4" color="inherit" className={classes.title}>
+            <Box fontFamily="Caesar Dressing">{siteTitle}</Box>
+          </Link> 
+          <Button color="inherit" href="/contact/">Contact</Button>
+        </Toolbar>
+      </AppBar>
     </div>
-  </header>
-)
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
