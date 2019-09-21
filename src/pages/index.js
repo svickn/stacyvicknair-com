@@ -31,13 +31,13 @@ const useStyles = makeStyles(theme => ({
       padding: theme.spacing(6),
       paddingRight: 0,
     },
-    backgroundColor: 'rgba(0,0,0,.4)',
+    backgroundColor: 'rgba(0,0,0,.5)',
   },
   paper: {
     padding: theme.spacing(2),
     textAlign: 'center',
     color: theme.palette.primary.contrastText,
-    backgroundColor: 'rgba(0,0,0,.4)',
+    backgroundColor: 'rgba(0,0,0,0)',
   },
 }));
 
